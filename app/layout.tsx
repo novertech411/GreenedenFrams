@@ -25,9 +25,14 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Green Eden Farms | Smart Agritech for a Sustainable Future',
+    images: '/images/logogreen.png',
+
     description:
       'Climate-Smart Agriculture powered by Artificial Intelligence, IoT and Renewable Energy.',
     type: 'website',
+  },
+  icons: {
+    icon: '/images/logogreen.png',
   },
 }
 

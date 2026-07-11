@@ -22,7 +22,7 @@ export function Hero() {
       <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-4 pt-28 pb-16 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="max-w-2xl">
-            <motion.span
+            {/* <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -30,7 +30,7 @@ export function Hero() {
             >
               <span className="size-2 rounded-full bg-primary" />
               Climate-Smart Agritech
-            </motion.span>
+            </motion.span> */}
 
             <motion.h1
               initial={{ opacity: 0, y: 28 }}
@@ -48,7 +48,7 @@ export function Hero() {
               className="mt-5 max-w-xl text-lg leading-relaxed text-pretty text-white/80"
             >
               Climate-Smart Agriculture powered by Artificial Intelligence, IoT and
-              Renewable Energy — helping farmers grow more while protecting the land.
+              Renewable Energy  helping farmers grow more while protecting the land.
             </motion.p>
 
             <motion.div
@@ -72,7 +72,7 @@ export function Hero() {
               </a>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.5 }}
@@ -96,7 +96,7 @@ export function Hero() {
                 </div>
                 Trusted by 12,000+ farmers
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
 
           <div className="relative hidden lg:block">
@@ -124,7 +124,7 @@ export function Hero() {
               </div>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               animate={{ y: [0, -14, 0] }}
               transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
               className="absolute -left-6 top-8 w-52 rounded-2xl border border-white/20 bg-white/90 p-4 shadow-xl backdrop-blur-md"
@@ -134,9 +134,9 @@ export function Hero() {
               <div className="mt-2 h-1.5 w-full rounded-full bg-secondary">
                 <div className="h-full w-2/3 rounded-full bg-primary" />
               </div>
-            </motion.div>
+            </motion.div> */}
 
-            <motion.div
+            {/* <motion.div
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
               className="absolute -bottom-6 right-2 flex items-center gap-3 rounded-2xl border border-white/20 bg-white/90 px-4 py-3 shadow-xl backdrop-blur-md"
@@ -148,7 +148,7 @@ export function Hero() {
                 <p className="text-xs font-semibold text-foreground">24/7 Support</p>
                 <p className="text-[11px] text-muted-foreground">Agronomist on call</p>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>

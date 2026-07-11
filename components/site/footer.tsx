@@ -3,7 +3,7 @@
 import type { FormEvent } from 'react'
 import { useState } from 'react'
 import { Leaf } from 'lucide-react'
-
+import Image from 'next/image'
 const columns = [
   {
     heading: 'Company',
@@ -45,8 +45,8 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.3fr_2fr]">
           <div>
             <a href="#home" className="flex items-center gap-2 text-xl font-bold">
-              <span className="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                <Leaf className="size-5" />
+              <span className="flex size-9 items-center justify-center ">
+                <Image src="/images/logogreen.png" alt="logo" width={90} height={90} />
               </span>
               Green Eden Farms
             </a>

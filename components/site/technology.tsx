@@ -73,9 +73,9 @@ export function Technology() {
           </div>
 
           <Reveal direction="left" delay={0.1}>
-            <div className="h-full min-h-72 overflow-hidden rounded-3xl">
+            <div className="h-full max-h-[600px] overflow-hidden rounded-3xl">
               <img
-                src="/images/tech-tablet.png"
+                src="/images/techIMG.JPG"
                 alt="Farmer holding a tablet with a farm analytics dashboard in a field"
                 className="size-full object-cover"
               />

@@ -88,7 +88,7 @@ export function About() {
           <Reveal direction="up" className="lg:sticky lg:top-28 lg:self-start">
             <div className="overflow-hidden rounded-3xl">
               <img
-                src="/images/about.png"
+                src="/images/aboutIMG.jpg"
                 alt="Agricultural drone flying over green crop rows"
                 className="aspect-4/5 w-full object-cover"
               />
@@ -100,7 +100,7 @@ export function About() {
               <Reveal key={stat.title} direction="up" delay={i * 0.08}>
                 <div className="py-6 first:pt-0">
                   <p className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-                    {stat.value}
+                    {/* {stat.value} */}
                   </p>
                   <h3 className="mt-2 text-lg font-semibold text-foreground">
                     {stat.title}

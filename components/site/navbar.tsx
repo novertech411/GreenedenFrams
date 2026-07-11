@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { Leaf, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
-
+import Image from 'next/image'
 const links = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
@@ -42,8 +42,8 @@ export function Navbar() {
             scrolled ? 'text-foreground' : 'text-white',
           )}
         >
-          <span className="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
-            <Leaf className="size-5" />
+          <span className="flex size-9 items-center justify-center rounded-full ">
+            <Image src="/images/logogreen.png" alt="logo" width={90} height={90} />
           </span>
           Green Eden Farms
         </a>
