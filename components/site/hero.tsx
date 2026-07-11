@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight, Headphones, Star } from 'lucide-react'
+import Image from 'next/image'
 
 const avatars = [
   '/images/farmer-1.png',
@@ -12,9 +13,12 @@ const avatars = [
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden">
-      <img
+      <Image
         src="/images/hero.png"
         alt="Farmer overlooking lush farmland at sunrise with an agricultural drone in the sky"
+        fill
+        priority
+        sizes="100vw"
         className="absolute inset-0 size-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/25" />
@@ -80,10 +84,12 @@ export function Hero() {
             >
               <div className="flex -space-x-3">
                 {avatars.map((src) => (
-                  <img
+                  <Image
                     key={src}
                     src={src || '/placeholder.svg'}
                     alt="Farmer using Green Eden Farms"
+                    width={40}
+                    height={40}
                     className="size-10 rounded-full border-2 border-white object-cover"
                   />
                 ))}

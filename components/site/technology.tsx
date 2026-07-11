@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowRight, BrainCircuit, Cpu, Satellite, Sun } from 'lucide-react'
+import Image from 'next/image'
 import { Reveal } from './reveal'
 
 const features = [
@@ -73,11 +74,13 @@ export function Technology() {
           </div>
 
           <Reveal direction="left" delay={0.1}>
-            <div className="h-full max-h-[600px] overflow-hidden rounded-3xl">
-              <img
+            <div className="relative aspect-4/3 h-full max-h-[600px] overflow-hidden rounded-3xl lg:aspect-auto">
+              <Image
                 src="/images/techIMG.JPG"
                 alt="Farmer holding a tablet with a farm analytics dashboard in a field"
-                className="size-full object-cover"
+                fill
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                className="object-cover"
               />
             </div>
           </Reveal>

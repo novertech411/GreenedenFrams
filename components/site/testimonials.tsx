@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowLeft, ArrowRight, Quote } from 'lucide-react'
+import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import { Reveal } from './reveal'
 
@@ -90,9 +91,11 @@ export function Testimonials() {
                   : 'border-transparent bg-background/50 opacity-60 hover:opacity-100',
               )}
             >
-              <img
+              <Image
                 src={t.image || '/placeholder.svg'}
                 alt={t.name}
+                width={48}
+                height={48}
                 className={cn(
                   'size-12 rounded-xl object-cover grayscale transition-all',
                   i === index && 'grayscale-0',

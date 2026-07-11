@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useInView } from 'framer-motion'
+import Image from 'next/image'
 import { Reveal } from './reveal'
 
 function Counter({
@@ -86,11 +87,13 @@ export function About() {
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <Reveal direction="up" className="lg:sticky lg:top-28 lg:self-start">
-            <div className="overflow-hidden rounded-3xl">
-              <img
+            <div className="relative aspect-4/5 w-full overflow-hidden rounded-3xl">
+              <Image
                 src="/images/aboutIMG.jpg"
                 alt="Agricultural drone flying over green crop rows"
-                className="aspect-4/5 w-full object-cover"
+                fill
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                className="object-cover"
               />
             </div>
           </Reveal>

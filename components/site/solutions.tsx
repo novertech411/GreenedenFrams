@@ -2,6 +2,7 @@
 
 import { useRef } from 'react'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 import { Reveal } from './reveal'
 
 const solutions = [
@@ -93,10 +94,12 @@ export function Solutions() {
               className="shrink-0 snap-start"
             >
               <article className="group relative h-96 w-80 overflow-hidden rounded-3xl">
-                <img
+                <Image
                   src={item.image || '/placeholder.svg'}
                   alt={item.title}
-                  className="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  fill
+                  sizes="320px"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-6">

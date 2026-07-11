@@ -2,7 +2,7 @@
 
 import type { FormEvent } from 'react'
 import { useState } from 'react'
-import { Leaf } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 import Image from 'next/image'
 const columns = [
   {
@@ -23,6 +23,11 @@ const columns = [
     heading: 'Legal',
     links: ['Privacy Policy', 'Terms & Conditions', 'License'],
   },
+]
+
+const locations = [
+  'Haske Quarters Road 8b, Jos, Plateau State, Nigeria',
+  'Plot 609 Jemibewon Crescent, Zone E, Gudu, Abuja, Nigeria',
 ]
 
 const socials = [
@@ -117,8 +122,15 @@ export function Footer() {
               </a>
             ))}
           </div>
+          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-8">
+            {locations.map((address) => (
+              <div key={address} className="flex items-start gap-2 max-w-xs text-sm text-footer-muted">
+                <MapPin className="mt-0.5 size-4 shrink-0 text-primary" />
+                <span>{address}</span>
+              </div>
+            ))}
+          </div>
           <div className="flex flex-col items-start justify-between gap-2 text-sm text-footer-muted sm:flex-row sm:items-center">
-            <p>350 Innovation Way, Lagos, Nigeria</p>
             <a href="tel:+2348036233898" className="transition-colors hover:text-primary">
               +234 803 623 3898
             </a>

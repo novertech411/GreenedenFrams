@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 import { Reveal } from './reveal'
 
 export function CTA() {
@@ -9,11 +10,13 @@ export function CTA() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal direction="scale">
           <div className="relative overflow-hidden rounded-4xl">
-            <img
+            <Image
               src="/images/cta.png"
               alt=""
               aria-hidden
-              className="absolute inset-0 size-full object-cover"
+              fill
+              sizes="100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
             <div className="relative flex flex-col items-center gap-6 px-6 py-16 text-center sm:py-20">

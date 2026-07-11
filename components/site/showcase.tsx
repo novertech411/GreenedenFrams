@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 import { Reveal } from './reveal'
 
 const slides = [
@@ -74,11 +75,13 @@ export function Showcase() {
                 <div className="flex items-end gap-4">
                   <div className="hidden gap-3 sm:flex">
                     {slide.thumbs.map((thumb) => (
-                      <img
+                      <Image
                         key={thumb}
                         src={thumb || '/placeholder.svg'}
                         alt=""
                         aria-hidden
+                        width={112}
+                        height={112}
                         className="size-24 rounded-2xl border border-white/20 object-cover lg:size-28"
                       />
                     ))}
