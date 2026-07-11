@@ -25,7 +25,10 @@ const columns = [
   },
 ]
 
-const socials = ['Instagram', 'Twitter', 'LinkedIn', 'YouTube', 'Facebook']
+const socials = [
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/company/green-eden-farms/' },
+  { name: 'Instagram', href: 'https://www.instagram.com/green_edens?igsh=ZGZpeTU3YzE0MTdp' },
+]
 
 export function Footer() {
   const [email, setEmail] = useState('')
@@ -104,16 +107,21 @@ export function Footer() {
           <div className="mb-6 flex flex-wrap gap-2">
             {socials.map((s) => (
               <a
-                key={s}
-                href="#"
+                key={s.name}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full border border-white/15 px-4 py-1.5 text-xs font-medium text-footer-muted transition-colors hover:border-primary hover:text-primary"
               >
-                {s}
+                {s.name}
               </a>
             ))}
           </div>
           <div className="flex flex-col items-start justify-between gap-2 text-sm text-footer-muted sm:flex-row sm:items-center">
             <p>350 Innovation Way, Lagos, Nigeria</p>
+            <a href="tel:+2348036233898" className="transition-colors hover:text-primary">
+              +234 803 623 3898
+            </a>
             <p>© 2026 Green Eden Farms. All Rights Reserved.</p>
           </div>
         </div>

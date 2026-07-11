@@ -6,24 +6,28 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Reveal } from './reveal'
 
 const slides = [
+
+
   {
-    image: '/images/showcase.png',
-    thumbs: ['/images/thumb-1.png', '/images/thumb-2.png'],
-    title: 'Drone-Powered Farming',
-    desc: 'Our advanced drone technology captures high-resolution aerial imagery, enabling farmers to monitor crop health, detect issues early, and improve yield efficiency.',
+    image: '/images/greenhouse.jpg',
+    thumbs: ['/images/greenhouse1.jpg', '/images/greenhouse2.jpg'],
+    title: 'Greenhouse Farming',
+    desc: 'Grow premium produce in our state-of-the-art greenhouses that provide optimal temperature, humidity, and nutrient control.',
   },
+  {
+    image: '/images/coldroom.jpg',
+    thumbs: ['/images/coldroom1.jpg', '/images/coldroom2.jpg'],
+    title: 'Coldroom Storage',
+    desc: 'Our advanced coldroom storage technology keeps harvests fresh for longer, slashing post-harvest losses and protecting farmer income.',
+  },
+
   {
     image: '/images/product-irrigation.png',
     thumbs: ['/images/product-solar.png', '/images/about.png'],
     title: 'Smart Irrigation & Water Intelligence',
     desc: 'Sensor-driven irrigation delivers the exact amount of water each crop needs, cutting usage by up to 40% while keeping fields perfectly hydrated.',
   },
-  {
-    image: '/images/product-greenhouse.png',
-    thumbs: ['/images/product-hydroponics.png', '/images/veg-basket.png'],
-    title: 'Climate-Controlled Greenhouses',
-    desc: 'Grow premium produce year-round in fully automated greenhouses that regulate light, temperature, humidity and nutrients autonomously.',
-  },
+
   {
     image: '/images/product-solar.png',
     thumbs: ['/images/product-analytics.png', '/images/product-drone.png'],
