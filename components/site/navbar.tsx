@@ -45,7 +45,7 @@ export function Navbar() {
           <span className="flex size-9 items-center justify-center rounded-full ">
             <Image src="/images/logogreen.png" alt="logo" width={90} height={90} />
           </span>
-          Green Eden Farms
+          Green Eden Farms Ltd
         </a>
 
         <div

@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowRight, BrainCircuit, Cpu, Satellite, Sun } from 'lucide-react'
+import { ArrowRight, BrainCircuit, Cpu, Brain, Satellite, Sun } from 'lucide-react'
 import Image from 'next/image'
 import { Reveal } from './reveal'
 
@@ -11,14 +11,19 @@ const features = [
     desc: 'Use AI to predict yields, detect diseases and optimise every farming decision.',
   },
   {
-    icon: Satellite,
-    title: 'Precision Farming',
-    desc: 'Drone and satellite insights for accurate, resource-efficient field management.',
+    icon: Brain,
+    title: 'consultancy',
+    desc: 'expert advice for accurate, resource-efficient field management.',
   },
   {
     icon: Cpu,
     title: 'IoT Sensors',
     desc: 'Real-time tracking of soil, crops and weather with connected smart sensors.',
+  },
+  {
+    icon: Satellite,
+    title: 'Precision Farming',
+    desc: 'Drone and satellite insights for accurate, resource-efficient field management.',
   },
   {
     icon: Sun,
