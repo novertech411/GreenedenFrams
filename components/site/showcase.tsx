@@ -23,21 +23,21 @@ const slides = [
   },
 
   {
-    image: '/images/product-irrigation.png',
-    thumbs: ['/images/product-solar.png', '/images/about.png'],
+    image: '/images/product-irrigation.webp',
+    thumbs: ['/images/product-solar.webp', '/images/about.webp'],
     title: 'Smart Irrigation & Water Intelligence',
     desc: 'Sensor-driven irrigation delivers the exact amount of water each crop needs, cutting usage by up to 40% while keeping fields perfectly hydrated.',
   },
 
   {
-    image: '/images/product-solar.png',
-    thumbs: ['/images/product-analytics.png', '/images/product-drone.png'],
+    image: '/images/product-solar.webp',
+    thumbs: ['/images/product-analytics.webp', '/images/product-drone.webp'],
     title: 'Solar Cold Storage',
     desc: 'Off-grid, solar-powered cold rooms keep harvests fresh for longer, slashing post-harvest losses and protecting farmer income.',
   },
   {
-    image: '/images/product-analytics.png',
-    thumbs: ['/images/tech-tablet.png', '/images/about.png'],
+    image: '/images/product-analytics.webp',
+    thumbs: ['/images/tech-tablet.webp', '/images/about.webp'],
     title: 'AI Farm Analytics',
     desc: 'Satellite imagery and machine learning turn raw field data into clear, actionable recommendations delivered straight to your device.',
   },

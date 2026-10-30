@@ -11,7 +11,7 @@ export function CTA() {
         <Reveal direction="scale">
           <div className="relative overflow-hidden rounded-4xl">
             <Image
-              src="/images/cta.png"
+              src="/images/cta.webp"
               alt=""
               aria-hidden
               fill

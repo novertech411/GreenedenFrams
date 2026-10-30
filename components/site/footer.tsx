@@ -4,24 +4,36 @@ import type { FormEvent } from 'react'
 import { useState } from 'react'
 import { MapPin } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 const columns = [
   {
     heading: 'Company',
-    links: ['Home', 'About', 'Technology', 'Solutions', 'Impact'],
+    links: [
+      { label: 'Home', href: '/' },
+      { label: 'About', href: '/about' },
+      { label: 'Marketplace', href: '/marketplace' },
+      { label: 'Solutions', href: '/solutions' },
+      { label: 'Impact', href: '/impact' },
+      { label: 'Contact', href: '/contact' },
+    ],
   },
   {
     heading: 'Solutions',
     links: [
-      'Precision Agriculture',
-      'IoT Monitoring',
-      'Greenhouse Farming',
-      'Solar Cold Storage',
-      'Farm Digitization',
+      { label: 'Precision Agriculture', href: '/solutions' },
+      { label: 'IoT Monitoring', href: '/solutions' },
+      { label: 'Greenhouse Farming', href: '/solutions' },
+      { label: 'Solar Cold Storage', href: '/solutions' },
+      { label: 'Farm Digitization', href: '/solutions' },
     ],
   },
   {
     heading: 'Legal',
-    links: ['Privacy Policy', 'Terms & Conditions', 'License'],
+    links: [
+      { label: 'Privacy Policy', href: '#' },
+      { label: 'Terms & Conditions', href: '#' },
+      { label: 'License', href: '#' },
+    ],
   },
 ]
 
@@ -52,12 +64,12 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_2fr]">
           <div>
-            <a href="#home" className="flex items-center gap-2 text-xl font-bold">
+            <Link href="/" className="flex items-center gap-2 text-xl font-bold">
               <span className="flex size-9 items-center justify-center ">
                 <Image src="/images/logogreen.png" alt="logo" width={90} height={90} />
               </span>
               Green Eden Farms
-            </a>
+            </Link>
             <p className="mt-4 max-w-sm leading-relaxed text-footer-muted">
               Climate-smart agriculture powered by AI, IoT and renewable energy. Growing
               a more productive, sustainable future for farmers everywhere.
@@ -93,13 +105,13 @@ export function Footer() {
                 <h3 className="text-sm font-semibold">{col.heading}</h3>
                 <ul className="mt-4 space-y-3">
                   {col.links.map((link) => (
-                    <li key={link}>
-                      <a
-                        href="#"
+                    <li key={link.label}>
+                      <Link
+                        href={link.href}
                         className="text-sm text-footer-muted transition-colors hover:text-primary"
                       >
-                        {link}
-                      </a>
+                        {link.label}
+                      </Link>
                     </li>
                   ))}
                 </ul>

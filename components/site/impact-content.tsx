@@ -15,7 +15,7 @@ import { Reveal } from './reveal'
 
 const pillars = [
   {
-    image: '/images/farmer-1.png',
+    image: '/images/farmer-1.webp',
     title: 'Empowering Farmers',
     desc: 'We equip farmers with innovative technologies that improve productivity, reduce operational costs, and enable data-driven decision-making.',
   },
@@ -35,7 +35,7 @@ const pillars = [
     desc: 'Our climate-smart technologies help farmers adapt to changing weather conditions, reduce environmental risks, and improve long-term agricultural sustainability.',
   },
   {
-    image: '/images/farmer-4.png',
+    image: '/images/farmer-4.webp',
     title: 'Supporting Food Security',
     desc: 'By increasing yields and reducing post-harvest losses, we contribute to stronger food systems and improved nutrition across communities.',
   },

@@ -15,7 +15,7 @@ export default function SolutionsPage() {
     <main className="min-h-screen bg-background">
       <Navbar />
       <PageHero
-        image="/images/product-greenhouse.png"
+        image="/images/product-greenhouse.webp"
         alt="Automated greenhouse growing systems"
         eyebrow="Our Solutions"
         title="Innovative Solutions for Smarter Agriculture"

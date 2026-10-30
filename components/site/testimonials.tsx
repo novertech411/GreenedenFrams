@@ -11,35 +11,35 @@ const testimonials = [
   {
     name: 'Samuel Okafor',
     role: 'Maize Farmer',
-    image: '/images/farmer-1.png',
+    image: '/images/farmer-1.webp',
     quote:
       "With Green Eden Farms' smart farming solutions, we've increased our crop yield by 35% while reducing water usage by 40%. The IoT monitoring and AI analytics completely transformed the way we manage our farm.",
   },
   {
     name: 'Amara Bello',
     role: 'Vegetable Grower',
-    image: '/images/farmer-2.png',
+    image: '/images/farmer-2.webp',
     quote:
       'The greenhouse automation means I can grow premium produce all year round. My income has doubled and I finally have data I can actually trust to make decisions.',
   },
   {
     name: 'Joseph Mensah',
     role: 'Grain Farmer',
-    image: '/images/farmer-3.png',
+    image: '/images/farmer-3.webp',
     quote:
       'Solar cold storage has been a game changer. We used to lose so much to spoilage — now our harvests stay fresh for weeks and we sell at far better prices.',
   },
   {
     name: 'Daniel Achieng',
     role: 'Agronomist',
-    image: '/images/farmer-4.png',
+    image: '/images/farmer-4.webp',
     quote:
       'The drone imagery catches problems weeks before the eye can. Precision agriculture with Green Eden Farms has made our whole cooperative dramatically more productive.',
   },
   {
     name: 'Grace Adeyemi',
     role: 'Horticulture Farmer',
-    image: '/images/farmer-5.png',
+    image: '/images/farmer-5.webp',
     quote:
       'Smart irrigation cut our water bills in half and our vegetables have never looked healthier. The support team feels like part of our own farm family.',
   },

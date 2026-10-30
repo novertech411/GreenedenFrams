@@ -7,7 +7,7 @@ import { Reveal } from './reveal'
 
 const sections = [
   {
-    image: '/images/product-drone.png',
+    image: '/images/product-drone.webp',
     eyebrow: 'Precision Agriculture',
     title: 'Maximize yield, minimize waste',
     desc: 'Use intelligent farming technologies to maximize crop productivity while minimizing resource waste. Our precision agriculture solutions combine data, automation, and smart decision-making to optimize irrigation, fertilization, and crop management.',
@@ -22,7 +22,7 @@ const sections = [
     reverse: false,
   },
   {
-    image: '/images/product-analytics.png',
+    image: '/images/product-analytics.webp',
     eyebrow: 'ScareGrow AI',
     title: 'Your intelligent farm assistant',
     desc: 'ScareGrow AI is our AI-powered agricultural platform that helps farmers monitor crops, identify diseases, detect pests, and receive instant agronomic recommendations.',
@@ -40,7 +40,7 @@ const sections = [
     reverse: true,
   },
   {
-    image: '/images/tech-tablet.png',
+    image: '/images/tech-tablet.webp',
     eyebrow: 'IoT Farm Monitoring',
     title: 'Stay connected to your farm, anywhere',
     desc: 'Our IoT monitoring systems collect real-time environmental data that helps farmers make informed decisions every day.',
@@ -79,7 +79,7 @@ const sections = [
     reverse: false,
   },
   {
-    image: '/images/product-tractor.png',
+    image: '/images/product-tractor.webp',
     eyebrow: 'Agricultural Consultancy',
     title: 'Helping farms embrace modern agriculture',
     desc: 'We provide expert advisory services, technology deployment, greenhouse design, irrigation planning, precision agriculture implementation, research, and farmer capacity development.',

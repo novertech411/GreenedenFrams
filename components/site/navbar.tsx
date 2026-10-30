@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Leaf, Menu, X } from 'lucide-react'
+import { Menu, ShoppingBasket, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -12,7 +12,7 @@ const links = [
   { label: 'Contact', href: '/contact' },
 ]
 
-export function Navbar() {
+export function Navbar({ solid = false }: { solid?: boolean }) {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -23,11 +23,14 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  // Pages without a dark hero image pass `solid` so the nav is readable at the top.
+  const opaque = scrolled || solid
+
   return (
     <header
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-all duration-300',
-        scrolled
+        opaque
           ? 'border-b border-border/60 bg-background/80 backdrop-blur-xl'
           : 'bg-transparent',
       )}
@@ -37,7 +40,7 @@ export function Navbar() {
           href="/"
           className={cn(
             'flex items-center gap-2 text-lg font-bold tracking-tight transition-colors',
-            scrolled ? 'text-foreground' : 'text-white',
+            opaque ? 'text-foreground' : 'text-white',
           )}
         >
           <span className="flex size-9 items-center justify-center rounded-full ">
@@ -49,7 +52,7 @@ export function Navbar() {
         <div
           className={cn(
             'hidden items-center gap-1 rounded-full px-2 py-1 lg:flex',
-            scrolled ? '' : 'bg-white/10 backdrop-blur-md',
+            opaque ? '' : 'bg-white/10 backdrop-blur-md',
           )}
         >
           {links.map((link) => (
@@ -58,7 +61,7 @@ export function Navbar() {
               href={link.href}
               className={cn(
                 'rounded-full px-3.5 py-2 text-sm font-medium transition-colors',
-                scrolled
+                opaque
                   ? 'text-muted-foreground hover:bg-secondary hover:text-foreground'
                   : 'text-white/80 hover:bg-white/15 hover:text-white',
               )}
@@ -70,10 +73,11 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <Link
-            href="/contact"
-            className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md sm:inline-flex"
+            href="/marketplace"
+            className="hidden items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md sm:inline-flex"
           >
-            Book Consultation
+            <ShoppingBasket className="size-4" />
+            Marketplace
           </Link>
           <button
             type="button"
@@ -81,7 +85,7 @@ export function Navbar() {
             aria-label="Toggle menu"
             className={cn(
               'inline-flex size-10 items-center justify-center rounded-full lg:hidden',
-              scrolled ? 'bg-secondary text-foreground' : 'bg-white/15 text-white',
+              opaque ? 'bg-secondary text-foreground' : 'bg-white/15 text-white',
             )}
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -103,11 +107,12 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/marketplace"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-primary-foreground"
+              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
             >
-              Book Consultation
+              <ShoppingBasket className="size-4" />
+              Marketplace
             </Link>
           </div>
         </div>

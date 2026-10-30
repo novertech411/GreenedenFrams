@@ -5,16 +5,16 @@ import { ArrowRight, Headphones, Star } from 'lucide-react'
 import Image from 'next/image'
 
 const avatars = [
-  '/images/farmer-1.png',
-  '/images/farmer-2.png',
-  '/images/farmer-3.png',
+  '/images/farmer-1.webp',
+  '/images/farmer-2.webp',
+  '/images/farmer-3.webp',
 ]
 
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden">
       <Image
-        src="/images/hero.png"
+        src="/images/hero.webp"
         alt="Farmer overlooking lush farmland at sunrise with an agricultural drone in the sky"
         fill
         priority
@@ -42,7 +42,8 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight text-balance text-white sm:text-5xl lg:text-6xl"
             >
-              Growing the Future of Agriculture with Intelligence, Innovation &amp; Sustainability
+              Growing the Future of Agriculture with Data, Renewable energy, Intelligence, Innovation &amp; Sustainability
+             
             </motion.h1>
 
             <motion.p
@@ -114,7 +115,7 @@ export function Hero() {
             >
               <div className="overflow-hidden rounded-2xl">
                 <img
-                  src="/images/veg-basket.png"
+                  src="/images/veg-basket.webp"
                   alt="Fresh harvested vegetables"
                   className="aspect-4/3 w-full object-cover"
                 />

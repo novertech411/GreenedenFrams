@@ -7,42 +7,42 @@ import { Reveal } from './reveal'
 
 const solutions = [
   {
-    image: '/images/product-drone.png',
+    image: '/images/product-drone.webp',
     title: 'Precision Agriculture',
     desc: 'High-resolution drone and satellite monitoring for mapping, scouting and real-time crop analysis.',
   },
   {
-    image: '/images/product-analytics.png',
+    image: '/images/product-analytics.webp',
     title: 'ScareGrow AI',
     desc: 'AI models that predict yields, detect diseases early and optimise every input on the farm.',
   },
   {
-    image: '/images/tech-tablet.png',
+    image: '/images/tech-tablet.webp',
     title: 'IoT Farm Monitoring',
     desc: 'Real-time tracking of soil, crops and weather through a connected network of smart sensors.',
   },
   {
-    image: '/images/product-greenhouse.png',
+    image: '/images/product-greenhouse.webp',
     title: 'Greenhouse Farming',
     desc: 'Fully automated, climate-controlled greenhouses for premium year-round production.',
   },
   {
-    image: '/images/product-solar.png',
+    image: '/images/product-solar.webp',
     title: 'Solar Cold Storage',
     desc: 'Off-grid solar cold rooms that keep harvests fresh and cut post-harvest losses.',
   },
   {
-    image: '/images/product-hydroponics.png',
+    image: '/images/product-hydroponics.webp',
     title: 'Smart Irrigation',
     desc: 'Sensor-driven drip systems delivering the exact water each crop needs, saving up to 40%.',
   },
   {
-    image: '/images/product-tractor.png',
+    image: '/images/product-tractor.webp',
     title: 'Farm Digitization',
     desc: 'GPS-guided machinery and digital records that streamline land prep, seeding and operations.',
   },
   {
-    image: '/images/veg-basket.png',
+    image: '/images/veg-basket.webp',
     title: 'Agricultural Consultancy',
     desc: 'Expert agronomists guiding you from soil analysis to harvest and market-ready produce.',
   },
